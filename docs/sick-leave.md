@@ -65,17 +65,5 @@ When taking leave, colleagues who can partly perform their own work will have to
 
 For example: you have a 36-hour contract, and you are 50% incapacitated for work. So you are currently working 18 hours a week, temporarily. Do you want free time during this reintegration? Then you must apply for 36 holiday hours.
 
- 
-## Cosmetic/aesthetic treatment
-
-Are you considering treatment of a cosmetic nature? For example, you want to get rid of glasses and therefore undergo an eye laser treatment. Or injectables, or a modification to your nose or breasts, or an eyelid correction? If there is no medical indication, then it is a purely cosmetic procedure, and the colleague is not entitled to leave of absence: sick leave as well as special leave for visiting a doctor f.e
-
-So without a medical indication, a colleague must have the treatment and/or procedure performed on their own time or take vacation leave for this purpose.
-
-It is important for the colleague and the role People Officer to make clear agreements about this prior to the period of absence.
-
-**Complications after surgery**
-
-A different situation arises when cosmetic surgery leads to medical complications that prevent a colleague from working. This does constitute a legitimate reason for calling in sick and continuing to pay wages during sick leave.
 
 [Back to home](index.md)
