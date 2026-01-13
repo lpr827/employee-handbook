@@ -1,0 +1,19 @@
+site_name: Respellion Employee Handbook
+site_url: https://mydomain.org/
+theme:
+  name: material
+  custom_dir: overrides
+  features:
+    - header.autohide
+  palette:
+    primary: custom
+
+extra_css:
+  - assets/stylesheets/extra.css
+markdown_extensions:
+  - pymdownx.blocks.caption
+  - md_in_html
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg

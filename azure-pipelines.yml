@@ -1,0 +1,20 @@
+trigger:
+  - master
+
+pool:
+  name: Default
+
+steps:
+  - task: DownloadSecureFile@1
+    name: key
+    inputs:
+      secureFile: "id_devops_employeehandbook"
+
+  - script: python3 -m pip install --user ansible
+    displayName: "ensure ansible installed"
+
+  - script: chmod 400 $(key.secureFilePath)
+    displayName: chmod 400 $(key.secureFilePath)
+
+  - script: ~/.local/bin/ansible-playbook --key-file $(key.secureFilePath) -i hosts.ini deploy_playbook.yml
+    displayName: "run ansible playbook"

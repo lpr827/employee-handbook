@@ -1,0 +1,40 @@
+---
+- name: Deploy Mkdocs with Ansible
+  hosts: all
+  become: yes
+  gather_facts: yes
+  vars:
+    ansible_ssh_common_args: '-o StrictHostKeyChecking=no'
+
+  tasks:
+    - name: Ensure dependencies are installed
+      ansible.builtin.package:
+        name:
+          - docker-ce
+        state: present
+      ignore_errors: yes
+      register: docker_valid
+
+    - name: Include geerlingguy.docker role conditionally
+      include_role:
+        name: geerlingguy.docker
+      when: docker_valid is failed
+
+    - name: Ensure target directory exists and is clean
+      ansible.builtin.file:
+        path: /opt/mkdocs
+        state: absent
+
+    - name: Copy current directory contents to /opt/mkdocs
+      ansible.builtin.copy:
+        src: ./
+        dest: /opt/mkdocs/
+        owner: root
+        group: root
+        mode: "0755"
+
+    - name: Start services with Docker Compose
+      community.docker.docker_compose_v2:
+        project_src: /opt/mkdocs
+        state: present
+        recreate: always
