@@ -1,4 +1,4 @@
-*.{$DOMAIN}, {$DOMAIN} {
+staging.{$DOMAIN}, {$DOMAIN} {
 
 	@staging host staging.{$DOMAIN} 
 	handle @staging {
