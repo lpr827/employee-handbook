@@ -1,3 +1,12 @@
 *.{$DOMAIN}, {$DOMAIN} {
-reverse_proxy http://mkdocs:8000
+
+	@staging host staging.{$DOMAIN} 
+	handle @staging {
+          reverse_proxy http://mkdocs-staging:8000
+	}
+
+	@prod host {$DOMAIN}
+	handle @prod {
+          reverse_proxy http://mkdocs:8000
+	}
 }

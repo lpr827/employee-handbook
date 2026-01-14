@@ -1,0 +1,14 @@
+services:
+  mkdocs:
+    image: squidfunk/mkdocs-material
+    restart: unless-stopped
+    volumes:
+      - ./:/docs:z
+    command: serve --dev-addr 0.0.0.0:8000
+    networks:
+      - prod
+
+networks:
+  prod:
+    name: prod # Same name as in first compose file
+    external: true # Don't create, just reference existing

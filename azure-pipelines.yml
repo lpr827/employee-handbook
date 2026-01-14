@@ -4,17 +4,75 @@ trigger:
 pool:
   name: Azure Pipelines
 
-steps:
-  - task: DownloadSecureFile@1
-    name: key
-    inputs:
-      secureFile: "id_devops_employeehandbook"
+stages:
+  - stage: Infra
+    trigger: manual
+    dependsOn: []
+    displayName: Deploy infra
+    jobs:
+      - job: DeployInfra
+        steps:
+          - task: DownloadSecureFile@1
+            name: key
+            inputs:
+              secureFile: "id_devops_employeehandbook"
 
-  - script: python3 -m pip install --user ansible
-    displayName: "ensure ansible installed"
+          - script: python3 -m pip install --user ansible
+            displayName: "ensure ansible installed"
 
-  - script: chmod 400 $(key.secureFilePath)
-    displayName: chmod 400 $(key.secureFilePath)
+          - script: chmod 400 $(key.secureFilePath)
+            displayName: set permissions for key
 
-  - script: ~/.local/bin/ansible-playbook --key-file $(key.secureFilePath) -i hosts.ini deploy_playbook.yml
-    displayName: "run ansible playbook"
+          - script: ~/.local/bin/ansible-playbook --key-file $(key.secureFilePath) -i hosts.ini deploy_infra_playbook.yml
+            displayName: "run ansible playbook for infra"
+
+  - stage: Staging
+    displayName: Deploy staging
+    dependsOn: [] # Create parallel step
+
+    jobs:
+      - job: Staging
+        steps:
+          - task: DownloadSecureFile@1
+            name: key
+            inputs:
+              secureFile: "id_devops_employeehandbook"
+
+          - script: python3 -m pip install --user ansible
+            displayName: "ensure ansible installed"
+
+          - script: chmod 400 $(key.secureFilePath)
+            displayName: set permissions for key
+
+          - script: ~/.local/bin/ansible-playbook --key-file $(key.secureFilePath) -i hosts.ini deploy_playbook.yml -e env=staging
+            displayName: "run ansible playbook for staging"
+
+  - stage: Prod
+    displayName: Deploy to prod
+    jobs:
+      - job: waitForValidation
+        displayName: Wait for external validation
+        pool: server
+        timeoutInMinutes: "4320" # job times out in 3 days
+        steps:
+          - task: ManualValidation@0
+            timeoutInMinutes: 1440 # task times out in 1 day
+            inputs:
+              notifyUsers: ""
+              instructions: "Please validate staging area before pushing to prod"
+
+      - job: Prod
+        steps:
+          - task: DownloadSecureFile@1
+            name: key
+            inputs:
+              secureFile: "id_devops_employeehandbook"
+
+          - script: python3 -m pip install --user ansible
+            displayName: "ensure ansible installed"
+
+          - script: chmod 400 $(key.secureFilePath)
+            displayName: set permissions for key
+
+          - script: ~/.local/bin/ansible-playbook --key-file $(key.secureFilePath) -i hosts.ini deploy_playbook.yml -e env=prod
+            displayName: "run ansible playbook for prod"

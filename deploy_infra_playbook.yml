@@ -1,27 +1,14 @@
-- name: Deploy Mkdocs with Ansible
+- name: Deploy Mkdocs infra with Ansible
   hosts: all
   become: yes
   gather_facts: yes
   vars:
     ansible_ssh_common_args: '-o StrictHostKeyChecking=no'
-    # Default environment is staging if not provided
-    env: "{{ env | default('staging') }}"
-
-  vars_prompt:
-    - name: env
-      prompt: "Enter environment name (e.g., staging, prod)"
-      private: no
-      default: "staging"
 
   tasks:
-    - name: Fail if env contains invalid characters
-      ansible.builtin.fail:
-        msg: "Environment name must contain only alphanumeric chars, hyphens, or underscores"
-      when: env is not regex('^[a-zA-Z0-9_-]+$')
-
     - name: Set destination directory
       ansible.builtin.set_fact:
-        dest_dir: "/opt/mkdocs-{{ env }}"
+        dest_dir: "/opt/mkdocs-infra"
 
     - name: Ensure dependencies are installed
       ansible.builtin.package:
@@ -57,6 +44,6 @@
     - name: Start services with Docker Compose
       community.docker.docker_compose_v2:
         project_src: "{{ dest_dir }}"
-        files: "compose-{{ env }}.yml"
         state: present
+        files: compose-infra.yml
         recreate: always

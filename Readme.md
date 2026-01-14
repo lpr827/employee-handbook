@@ -41,6 +41,13 @@ Run this command to start a live-reloading development server:
 podman run --rm -it -p 8000:8000 -v ${PWD}:/docs:z squidfunk/mkdocs-material serve --dev-addr 0.0.0.0:8000
 ```
 
+or if you have Docker installed:
+```bash
+docker run --rm -it -p 8000:8000 -v ${PWD}:/docs:z squidfunk/mkdocs-material serve --dev-addr 0.0.0.0:8000
+```
+
+
+
 > 🔍 **Note**: We bind to `0.0.0.0` so the site is accessible outside the container (e.g., from your browser).  
 > If port `8000` is busy, change it (e.g., `-p 8080:8000`).
 
@@ -69,6 +76,7 @@ This creates the basic `mkdocs.yml` and `docs/` structure.
 - [Material for MkDocs – Getting Started](https://squidfunk.github.io/mkdocs-material/getting-started/)
 - [Caddyfile Configuration Patterns](https://caddyserver.com/docs/caddyfile/patterns)
 
+
 ---
 
 ## 🤝 How to Contribute
@@ -85,11 +93,25 @@ All updates to the handbook go through PRs—no direct pushes to `master`.
 
 ## 🚀 Deploying the Site
 
-Deployment is fully automated with Ansible:
+Deployment is fully automated with Ansible. Make sure to install the Ansible collections and roles before starting with:
+
+```
+ansible-galaxy install -r requirements.yml
+```
+
+And to deploy to staging:
 
 ```bash
 ansible-playbook -i hosts.ini ./deploy_playbook.yml
 ```
+
+Deploying directly to prod:
+
+```bash
+ansible-playbook -i hosts.ini ./deploy_playbook.yml -e env=prod
+```
+
+---
 
 > ✅ Make sure you have SSH access to the target host listed in `hosts.ini`.
 
@@ -102,6 +124,16 @@ ansible-playbook -i hosts.ini ./deploy_playbook.yml
 That’s it! The live site is served via Caddy as a reverse proxy.
 
 ---
+
+## Creating infra
+
+There is an extra playbook to deploy the infra, 'deploy_infra_playbook.yml'. It is deployed in the same way. It deploys and starts a Caddy container with the Caddyfile to reverse proxy to all the environments. (staging and prod.) This is seperated from the rest of the application, because we don't need to redeploy the infra part with every release. Also the Let's Encrypt authority is rate-limited by 5 certificate requests per 7 days. 
+
+Deploy the infra with:
+```bash
+ansible-playbook -i hosts.ini ./deploy_infra_playbook.yml 
+```
+
 
 ✨ **Happy documenting!**  
 *— The Respellion Team*

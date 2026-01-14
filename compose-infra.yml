@@ -1,0 +1,23 @@
+services:
+  caddy:
+    image: caddy
+    container_name: caddy
+    restart: unless-stopped
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile
+    ports:
+      - 80:80
+      - 443:443
+    environment:
+      - DOMAIN=employeehandbook.respellion.nl
+    networks:
+      - staging
+      - prod
+
+networks:
+  staging:
+    name: staging
+    external: false
+  prod:
+    name: prod
+    external: false
