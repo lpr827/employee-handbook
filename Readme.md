@@ -111,9 +111,17 @@ Deploying directly to prod:
 ansible-playbook -i hosts.ini ./deploy_playbook.yml -e env=prod
 ```
 
+> ✅ Make sure you have SSH access to the target host listed in `hosts.ini`.
+
 ---
 
-> ✅ Make sure you have SSH access to the target host listed in `hosts.ini`.
+## Infra diagram
+
+![Diagram showing the infra](diagrams/Systemdesign.excalidraw.png)
+
+
+---
+
 
 ### What the playbook does:
 
