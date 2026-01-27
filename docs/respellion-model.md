@@ -40,8 +40,8 @@ Respellion operates with:
 - A task board for tracking work
 - Microsoft Loop for administration and meeting notes
 
-# Meeting Structure
 
+# Meeting Structure
 All meetings are administered in Microsoft Loop
 
 ## Tactical Meetings
