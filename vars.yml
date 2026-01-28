@@ -1,5 +1,0 @@
-variables:
- - name: secureFile
-   value: id_devops_employeehandbook
- - name: domain-name
-   value: employeehandbook.respellion.nl
