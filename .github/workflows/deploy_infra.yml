@@ -51,11 +51,17 @@ jobs:
 
       - name: Validate Ansible syntax
         run: |
-          ansible-playbook --syntax-check -i "$DOMAINNAME," -u "$ANSIBLE_USER" deploy_playbook.yml
+          ansible-playbook --syntax-check
+            -e DOMAIN_NAME="$DOMAIN_NAME" \
+            -e ANSIBLE_USER="$ANSIBLE_USER \
+           deploy_playbook.yml
 
       - name: Run Ansible playbook
         run: |
-          ansible-playbook -i "$DOMAINNAME," -u "$ANSIBLE_USER" deploy_infra_playbook.yml \
+          ansible-playbook \ 
+            -e DOMAIN_NAME="$DOMAIN_NAME" \
+            -e ANSIBLE_USER="$ANSIBLE_USER \
+            deploy_infra_playbook.yml \
             --diff \
             --verbose
         env:
