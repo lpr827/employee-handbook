@@ -50,10 +50,12 @@ jobs:
           echo "DOMAINNAME=$DOMAIN_NAME" >> $GITHUB_ENV
 
       - name: Validate Ansible syntax
+        id: validate_syntax
         run: |
-          ansible-playbook --syntax-check -i "$DOMAINNAME," -u "$ANSIBLE_USER" deploy_playbook.yml
+          ansible-playbook --syntax-check -i "$DOMAIN_NAME," -u "$ANSIBLE_USER" deploy_playbook.yml
 
       - name: Run Ansible playbook
+        if: steps.validate_syntax.conclusion == 'success'
         run: |
           ansible-playbook \
             -e DOMAIN_NAME="$DOMAIN_NAME" \
