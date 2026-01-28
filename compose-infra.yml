@@ -10,7 +10,7 @@ services:
       - 80:80
       - 443:443
     environment:
-      - DOMAIN=${DOMAINNAME}
+      - DOMAIN=${DOMAIN_NAME}
     networks:
       - staging
       - prod

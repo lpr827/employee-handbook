@@ -6,6 +6,17 @@
     ansible_ssh_common_args: '-o StrictHostKeyChecking=no'
 
   tasks:
+    - name: Validate required variables
+      ansible.builtin.assert:
+        that:
+          - domain_name is defined
+          - (domain_name | string) | length > 0
+          - ansible_user is defined
+          - (ansible_user | string) | length > 0
+        fail_msg: >
+          Required variables are empty. Add 'domain_name' and 'ansible_user' in deployment_vars.json.
+        success_msg: "Required variables are set."
+
     - name: Set destination directory
       ansible.builtin.set_fact:
         dest_dir: "/opt/mkdocs-infra"
