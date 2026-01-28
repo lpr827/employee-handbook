@@ -14,6 +14,8 @@ hide:
 
     ## The beginning
 
+test
+
     - 🏅 [Your first day at work and the period that follows](your-first-day.md)
     - ❓ [What does Respellion actually do?](what-does-respellion.md)
     - 👥 [The Respellion model; no management, no job descriptions](respellion-model.md)
