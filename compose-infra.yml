@@ -5,6 +5,7 @@ services:
     restart: unless-stopped
     volumes:
       - ./Caddyfile:/etc/caddy/Caddyfile
+      - /opt/infra-data:/data:rw
     ports:
       - 80:80
       - 443:443
