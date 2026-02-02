@@ -14,9 +14,9 @@ hide:
 
     ## The beginning
 
-    - 🏅 [Your first day at work and the period that follows](The beginning/your-first-day.md)
     - ❓ [What does Respellion actually do?](The beginning/what-does-respellion.md)
     - 👥 [The Respellion model; no management, no job descriptions](The beginning/respellion-model.md)
+    - 🏅 [Our Quality Management System](How we work together/qms-design.md)
 
 
     ## How we work together
