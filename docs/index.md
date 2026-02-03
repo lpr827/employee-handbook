@@ -34,12 +34,7 @@ hide:
     - 😶‍🌫️ [Office Etiquette](Day to day/office-etiquette.md)
     - 🚗 [Travel Time Policy](Day to day/travel-time-policy.md)
 
-
-    ## Staying up to date
-
-
-
-- 
+ - 
 
     ## Security
 
