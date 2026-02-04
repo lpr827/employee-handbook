@@ -33,6 +33,7 @@ hide:
     - 🧾 [Time Registration](Day to day/time-registration.md)
     - 😶‍🌫️ [Office Etiquette](Day to day/office-etiquette.md)
     - 🚗 [Travel Time Policy](Day to day/travel-time-policy.md)
+    - 🖨 [ Printer](Day to day/printer.md)
 
  - 
 
