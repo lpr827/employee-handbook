@@ -1,105 +1,70 @@
-# Quality Manual (QMS) Respellion (ISO 9001:2015)
-This document describes the Quality Management System (QMS) of Respellion. Our QMS is designed to deliver maximum value to our customers through "sustainable digitization" without unnecessary bureaucracy. We use Holacracy as a governance model and Agile/DevOps as an operational standard.
+# Quality policy
 
-## ISO9001:2015 Chapters
-### 4. Context of the Organization
-#### 4.1 Understanding the Organization and Its Context
-Respellion operates at the intersection of open-source technology and societal impact. Our context is determined by the need for safe, scalable, and sustainable digital solutions. Documentation: Manifesto, Company Report. 
-Review: Annually during a strategic governance session of the General Board Circle.
+| | |
+|---|---|
+| **Version** | 1.0 (draft) |
+| **Date** | 04-11-2026 |
+| **Owner (role)** | Process Guardian |
+| **Adopted by** | Director  |
+| **Review** | Every year in the management review, or earlier when our scope or strategy changes |
+| **Standard** | ISO 9001:2015, clause 5.2 |
 
-#### 4.2 Stakeholders and Their Needs
-We identify our stakeholders (customers, employees/roles, government, partners) through our circle structure. 
-Implementation: Roles and their 'accountabilities' in Glassfrog define responsibilities towards stakeholders. 
-Evidence: Glassfrog governance overview.
+## Why we have a quality policy
 
-#### 4.3 Scope
-The QMS applies to: "The design, development, implementation, and maintenance of customized software solutions and the provision of consultancy in the field of digitization and open-source technology."
+Quality at Respellion means: we tell it like it is, we do what we promise, and we can show that we did. Our clients' requirements and expectations are central. Delivering quality is part of everyone's daily work, not something extra. This policy sets the direction for that work and is the basis for our quality objectives.
 
-#### 4.4 Quality Management System and Processes
-Our processes are not linear but cyclical (Agile). The interaction between processes is managed through Holacracy meetings (Tactical & Governance).
+## Our policy
 
-### 5. Leadership
-#### 5.1 Leadership and Commitment
-At Respellion, leadership is distributed. The roles of Lead Link (strategy/prioritization) and Facilitator (process oversight) ensure a focus on quality. Our core values: Trust, Courage, Self-discipline, Entrepreneurship form the basis for quality awareness.
+Respellion wants to contribute to a society in which open-source technology is used to enable digitization in a sustainable way. We develop, implement, manage and maintain software, and we provide professionals and multidisciplinary teams who understand that sustainable software is only created through close and excellent collaboration.
 
-#### 5.2 Quality Policy
-Our policy is focused on "Sustainable Digitization." We commit to: Meeting customer and legal requirements. Continuous improvement of our 'rebellious' approach. Security by design.
+To do that, we commit to the following:
 
-#### 5.3 Roles, Responsibilities, and Authorities
-In accordance with Holacracy, all roles, responsibilities, and authorities are transparently documented in Glassfrog. There are no hierarchical positions, only dynamic roles.
+1. **We deliver what we promise.** We agree with our clients on clear requirements and acceptance criteria. We deliver work that meets them, and we record that the client accepted it.
+2. **We meet all applicable requirements.** These are the requirements of our clients, applicable laws and regulations (including privacy legislation), and the requirements of ISO 9001.
+3. **We work with competent people who keep developing.** For every role we know which competences are needed. Every colleague has a development plan and gets time and budget to grow.
+4. **We continually improve our services and our QMS.** We measure how we perform, learn from mistakes and complaints, and act on what we find. Every improvement action has an owner and a deadline, and we check whether it worked.
 
-### 6. Planning
-#### 6.1 Risks and Opportunities
-Risk management is an ongoing process for us, not an annual document. 
-Trigger: A felt 'Tension' (gap between current and desired situation). 
-Action holder: Any role within the relevant Circle. 
-Action: Bring the Tension into a Tactical or Governance meeting. 
-Output: Output of the meeting (projects or governance changes).
+## Framework for our quality objectives
 
-#### 6.2 Quality Objectives
-Objectives are defined per Circle in the form of OKRs or Circle Purposes. 
-Measurement: Progress is discussed in the monthly Tactical Meetings.
+Our [quality objectives](quality-objectives.md) are derived from these commitments. Each objective is measurable, has an owner role, and is reviewed at least once a year in the management review.
 
-### 7. Support
-#### 7.1 and 7.2 Resources and Competencies
-People are our most important capital. 
-A formal review of the development and contribution of role-fillers takes place twice a year. 
-Huddle Elevator: Coaching and feedback sessions ensure knowledge levels.
+| Commitment | Objective area |
+|---|---|
+| 1. We deliver what we promise | Satisfied clients; delivery as agreed |
+| 2. We meet all applicable requirements | Delivery as agreed |
+| 3. Competent people who keep developing | Competent colleagues who develop themselves; Respellion as a reliable employer |
+| 4. Continual improvement | Improvement actions completed on time |
 
-#### 7.3 Awareness
-Quality awareness is ensured through Onboarding and weekly Huddle Check-ins.
+## How we put this policy into practice
 
-#### 7.4 Communication
-Communication about the QMS is done during our monthly Tactical meeting. Also we focus a lot on our quality policy and our quality goals during Onboarding process and in our Employee Handbook.
+- **Roles.** Holacracy distributes authority over roles in GlassFrog. The director (top management) is accountable for the effectiveness of the QMS: he adopts this policy and the objectives, makes resources available and leads the management review. See [QMS roles and responsibilities](roles-and-responsibilities.md).
+- **Rhythm.** We discuss progress on our objectives and open improvement actions in the tactical meeting every four weeks. Once a year an internal audit covers the whole QMS, carried out by colleagues who do not audit their own work. After the audit, the director holds the management review. See [Meetings and communication](meetings-and-communication.md) and [Internal audit and management review](internal-audit-and-management-review.md).
 
-#### 7.5 Documented Information
-We minimize static documents.  
-- Source codes: Git (version control is evidence).  
-- Processes: Glassfrog (Governance).  
-- Tasks: Task Board (Jira/Azure DevOps).
+## What this means for you
 
-### 8. Execution (Operations)
-#### 8.1 Operational Planning and Control
-We work according to the Agile methodology (Scrum/Kanban). Quality gate: The Definition of Done (DoD) serves as the primary quality control (ISO 9001:8.1). Each user story must meet the DoD (e.g., peer review, automated tests, security scan).
+You contribute to quality in your daily work. Concretely, we expect you to:
 
-#### 8.2 Requirements for Products and Services
-Trigger: Customer request or Request for Proposal. 
-Action holder: Role 'Contracting' or 'Product Owner'. 
-Output: Signed proposal or approved Backlog items.
+- **Know this policy and our objectives**, and know how your work contributes to them.
+- **Record agreements and decisions.** When you lead a client meeting or an internal meeting, make sure decisions and actions are recorded in the minutes.
+- **Record acceptance.** Make sure it is recorded who accepted a delivery on the client's side, and against which criteria. See [Delivery and acceptance](delivery-and-acceptance.md).
+- **Report what goes wrong.** Register bugs, incidents and complaints. Never delete a ticket or record; mark it as "invalid" instead. See [Nonconformities, complaints and improvement](nonconformities-and-improvement.md).
+- **Look beyond the single case.** When you analyse a problem, also check whether it can happen elsewhere, and check later whether the fix worked.
+- **Keep your competence file up to date** with certificates, courses and experience. See [Competence and development](competence-and-development.md).
+- **Use the current version.** Use documents from their leading location and do not keep your own copies.
+- **Raise tensions.** If you see a risk or an opportunity, bring it to the tactical or governance meeting.
+- **Take part in audits and evaluations** when you are asked to.
 
-#### 8.3 Design and Development
-Software development follows the CI/CD pipeline. 
-Review: Peer reviews (Pull Requests) are mandatory for every code change (ISO 9001:8.3.4). 
-Validation: User Acceptance Testing (UAT) by the customer before release.
+Not following our agreements can lead to unhappy clients, rework, risks to information security and, ultimately, the loss of our certificate. If an agreement does not work in practice, raise it as a tension so we can change it. Do not work around it.
 
-#### 8.4 Control of Externally Provided Services
-Suppliers (Cloud providers, SaaS tools) are selected based on security and sustainability criteria (ISO 14001 integration).
+## How we communicate this policy
 
-### 9. Performance Evaluation
-#### 9.1 Monitoring and Measurement
-Customer satisfaction: Measured directly during Sprint Demos and through informal feedback loops. 
-Process performance: Velocity and Lead Time in Agile boards.
+- It is published in this handbook, which is public, so clients, partners and candidates can read it too.
+- After adoption, and after every change, it is discussed in the tactical meeting. The minutes record the discussion and who attended.
+- It is part of the onboarding of every new colleague.
 
-#### 9.2 Internal Audit
-We continuously audit ourselves by testing the 'Governance' against reality. 
-Formal audit: Annually, a designated role outside the circle conducts a check on compliance with its own process agreements in Glassfrog.
+## Version history
 
-#### 9.3 Management Review
-In accordance with Holacracy, we replace the classic management review with a specific Strategic Review in the General Board Circle.  
-- Input: Overview of Tensions, customer feedback, financial status, incidents.  
-- Output: Strategic course changes and updates to the QMS.
-
-### 10. Improvement
-#### 10.1 General and 10.2 Deviations
-Mistakes are learning opportunities ("Most Rebellious Failures").  
-- Trigger: A bug, incident, or customer complaint.  
-- Action holder: The relevant Role within the Huddle.  
-- Action: Root cause analysis during the Retrospective (ISO 9001:10.2).  
-- Output: Improvement action on the Backlog or adjustment in the DoD.
-
-
-#### 10.3 Continuous Improvement
-
-Our structure is self-cleaning. By continuously processing Tensions in Governance meetings, the system improves itself every month.
-
-
+| Version | Date | Change |
+|---|---|---|
+| 0.1 | – | First draft (in Dutch, not adopted) |
+| 0.2 | 04-11-2026 | Explicit commitment to continual improvement of the QMS; framework for quality objectives added; review rhythm aligned with the four-weekly tactical meeting; accountability of top management made explicit; expectations for colleagues added. Commitment on security and privacy by design left out: information security gets its own policy when we extend to ISO 27001 |
