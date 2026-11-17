@@ -22,8 +22,8 @@ To be an inclusive organisation, you may exchange **4 national Dutch public holi
 
 Catering at Respellion events is **vegetarian by default**, with alternatives available on request. The purpose of the default is inclusion: it removes the recurring need for individuals with dietary, religious, or ethical requirements to advocate for themselves, and instead makes the inclusive option the standard everyone starts from.
 
-When you expense food and drinks for a team event, follow the normal rules and WKR constraints in [Spending and Contracting → Team events, food & drinks](spending-and-contracting.md).
+When you expense food and drinks for a team event, follow the normal rules and WKR constraints in [Spending and purchasing → Team events, food & drinks](../Spending and contracting/spending-purchasing.md).
 
 ## Handling Sensitive Personal Data
 
-Diversity-related information is sensitive. Under the GDPR, data on a person's race, religion, health, and similar attributes are **special categories of personal data**: processing them is prohibited unless a specific legal exception applies, and you must consult the Privacy Officer before using such data. Restrict access to personal data to those who need it for their role, and store sensitive data only in secure applications. (Rules: [Security → Working with Personal Data](security.md).)
+Diversity-related information is sensitive. Under the GDPR, data on a person's race, religion, health, and similar attributes are **special categories of personal data**: processing them is prohibited unless a specific legal exception applies, and you must consult the Privacy Officer before using such data. Restrict access to personal data to those who need it for their role, and store sensitive data only in secure applications. (Rules: [Security → Working with personal data](../Security/working-with-personal-data.md).)

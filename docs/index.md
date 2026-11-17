@@ -19,7 +19,7 @@ So, whether you're a future colleague or a curious partner: **You're welcome to 
 
     - ❓ [What does Respellion actually do?](Who we are/what-does-respellion.md)
     - 👥 [The Respellion model; no management, no job descriptions](Who we are/respellion-model.md)
-    - 🏅 [Our Quality Management System](Who we are/qms-design.md)
+    - 🏅 [Our quality policy](Who we are/qms-design.md)
 
 
     ## How we work together

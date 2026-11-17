@@ -34,10 +34,10 @@ Our observations from the field show that while agile frameworks effectively fac
 Respellion operates with:
 
 - One organizational circle
-- Monthly tactical and governance meetings (Fridays)
+- Tactical and governance meetings every four weeks (Fridays)
 - A Huddle check-in meeting per week
 - A Huddle Elevator session every two months
-- A task board for tracking work
+- Nextcloud Deck for tracking tasks per role and tensions
 - Microsoft Loop for administration and meeting notes  
 
 
@@ -48,7 +48,7 @@ All meetings are administered in Microsoft Loop.
 
 - Focus on operational issues and coordinating next actions
 - Results in clear tasks assigned to specific roles
-- Tasks are tracked on the Respellion Task Board
+- Tasks are tracked per role in Nextcloud Deck
 
 ### Governance Meetings
 
@@ -64,6 +64,8 @@ A tension represents an opportunity for improvement—a gap between current real
 - Providing information
 - Creating new roles
 - Defining specific actions
+
+You can always raise a tension or report an improvement: in the tactical or governance meeting, in Nextcloud Deck, or via the Process Guardian or the Privacy Officer. Reports end up in our central improvement register in Nextcloud Tables.
    
 
 This approach empowers our people with real responsibility, entrepreneurial freedom, and the ability to evolve our organization continuously.
