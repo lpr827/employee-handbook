@@ -20,7 +20,7 @@ We are able to scale up and down in a timely manner with the right expertise nee
  
 ## High performance teams
 
-We deliver high performance teams. In our vision, these are teams of IT professionals with in-depth technical knowledge, who bring the DNA of our organization. The core values of courage, self-discipline, responsibility, and entrepreneurship ensure a way of working together that creates synergy between individual competences.
+We deliver high performance teams. In our vision, these are teams of IT professionals with in-depth technical knowledge, who bring the DNA of our organization. The core values of trust, courage, self-discipline and entrepreneurship ensure a way of working together that creates synergy between individual competences.
 
 Team members are highly trained T-shaped professionals who perform all the work necessary to deliver results. By attending training courses, conferences and workshops, they stay up-to-date with the latest developments in their field of expertise. In addition, our agile coaches stimulate new insights and awareness, so that there is attention to the wellbeing of the individual.
 

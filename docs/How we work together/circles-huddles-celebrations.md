@@ -6,7 +6,7 @@ At Respellion, we've evolved beyond traditional performance management to embrac
 
 **Huddle Check-ins:** These weekly small group meetings create a supportive environment where team members can share updates, discuss concerns, and offer mutual support. Unlike traditional mentorship programs, these frequent check-ins ensure meaningful connections within trusted groups.
 
-**Huddle Elevators:** These two monthly in-depth sessions focus on personal and professional development. The "elevator" concept emphasizes building on your strengths rather than just addressing weaknesses. These sessions incorporate your Personal Development Plan (POP) and competency insights to guide meaningful coaching conversations.
+**Huddle Elevators:** These in-depth sessions every two months focus on personal and professional development. The "elevator" concept emphasizes building on your strengths rather than just addressing weaknesses. These sessions incorporate your Personal Development Plan (POP) and competency insights to guide meaningful coaching conversations.
 
 ## Capacity Building Framework
 

@@ -6,7 +6,7 @@ The coaching culture at Respellion is the concept in which employees regularly g
 
 ## 2. What are 'huddle check-ins' and 'huddle elevators' and what is their purpose within the organization?
 
-Respellion implements weekly 'huddle check-ins' (once a week), which are small group meetings where team members can share updates and concerns and support each other. The goal is to create a mentor-like environment within small, trusted groups for more frequent and meaningful interactions than traditional mentoring programs. In addition, there are monthly 'huddle elevators', which are more in-depth sessions focused on personal and professional development. These 'elevator' sessions are designed to strengthen individuals in their strengths and serve as a platform for coaching conversations, requiring inputs such as personal development plans and competency insights.
+Respellion implements weekly 'huddle check-ins' (once a week), which are small group meetings where team members can share updates and concerns and support each other. The goal is to create a mentor-like environment within small, trusted groups for more frequent and meaningful interactions than traditional mentoring programs. In addition, there are 'huddle elevators' every two months, which are more in-depth sessions focused on personal and professional development. These 'elevator' sessions are designed to strengthen individuals in their strengths and serve as a platform for coaching conversations, requiring inputs such as personal development plans and competency insights.
 
 ## 3. What is Respellion's capacity building framework and what three main areas does it cover?
 
